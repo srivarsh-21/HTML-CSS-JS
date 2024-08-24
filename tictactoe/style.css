@@ -1,0 +1,92 @@
+*{
+    margin:0;
+    padding:0;
+   
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.959);
+    margin-top:200px;
+}
+
+h1{
+    color:rgb(17, 226, 181);
+    padding-bottom:40px;
+} 
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tttgame {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+
+.box{
+   /* display:grid;
+   grid-template-columns:auto auto auto;
+   grid-gap: 10px; */
+   width:13vh;
+   height:115px;
+   border-color: blueviolet ;
+   border-width: 1px;
+   border-radius: 15px;
+   background-color: rgb(138,46,226);
+   margin-right: 5px;
+   margin-bottom:8px;
+   font-size: 2em;
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   transition: background-color 0.3s;
+}
+
+.box:hover {
+    background-color: rgb(103, 33, 184);
+}
+
+.nxt{
+    background-color: black;
+
+}
+
+#reset-btn{
+    background-color: rgba(77, 71, 71, 0.808);
+    border-color:rgba(77, 71, 71, 0.808);
+    width:100px;
+    height:40px;
+    color:white;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+   
+}
+
+#reset-btn:hover {
+    background-color: rgb(110, 106, 106);
+}
+/* Responsive Design */
+
+@media (max-width: 600px) {
+    .box {
+        width: 25vw;
+        height: 25vw;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    #reset-btn {
+        width: 80px;
+        height: 35px;
+        font-size: 0.9em;
+    }
+}
